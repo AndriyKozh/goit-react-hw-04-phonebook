@@ -1,5 +1,4 @@
 import Form from './Form/Form';
-import Contact from './Contact/Contact';
 import Filter from './Filter/Filter';
 import { AppBlock } from './App.style';
 import { v4 as uuidv4 } from 'uuid';

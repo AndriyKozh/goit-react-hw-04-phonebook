@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { FilterLable, FilterInput, FilterBlock } from './Filter.style';
 
 const Filter = ({ handleFilter }) => {
