@@ -17,7 +17,7 @@ export const App = () => {
 
   useEffect(() => {
     localStorage.setItem('contacts', JSON.stringify(contacts));
-  }, [filter]);
+  }, [contacts]);
 
   function addContactGandler(text) {
     const newContact = {
@@ -48,7 +48,7 @@ export const App = () => {
   return (
     <AppBlock className="App">
       <Form addContact={addContactGandler} />
-      <Filter handleFilter={filterText} />
+      <Filter filter={filter} handleFilter={filterText} />
       {contacts.length > 0 ? (
         <Phonebook contacts={filtrContacts} deleteContact={deleteContact} />
       ) : (

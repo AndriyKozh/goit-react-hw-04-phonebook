@@ -1,6 +1,6 @@
 import { FilterLable, FilterInput, FilterBlock } from './Filter.style';
 
-const Filter = ({ handleFilter }) => {
+const Filter = ({ handleFilter, filter }) => {
   return (
     <FilterBlock>
       <h2>Contact</h2>
@@ -9,6 +9,7 @@ const Filter = ({ handleFilter }) => {
         <FilterInput
           onChange={handleFilter}
           type="text"
+          value={filter}
           name="name"
           placeholder="filter"
         />
