@@ -17,7 +17,7 @@ export const App = () => {
 
   useEffect(() => {
     localStorage.setItem('contacts', JSON.stringify(contacts));
-  });
+  }, [filter]);
 
   function addContactGandler(text) {
     const newContact = {
